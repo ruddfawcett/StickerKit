@@ -10,6 +10,11 @@
 		F1057BFF259680E80069FADD /* StickerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1057BF5259680E80069FADD /* StickerKit.framework */; };
 		F1057C04259680E80069FADD /* StickerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C03259680E80069FADD /* StickerKitTests.swift */; };
 		F1057C06259680E80069FADD /* StickerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F1057BF8259680E80069FADD /* StickerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1057C122596811B0069FADD /* InstagramSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C112596811B0069FADD /* InstagramSticker.swift */; };
+		F1057C162596812F0069FADD /* StickerKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C152596812F0069FADD /* StickerKitError.swift */; };
+		F1057C1A259681420069FADD /* SnapchatSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C19259681420069FADD /* SnapchatSticker.swift */; };
+		F1057C1E259681540069FADD /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C1D259681540069FADD /* Sticker.swift */; };
+		F1057C22259681840069FADD /* StickerKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1057C21259681840069FADD /* StickerKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		F1057BFE259680E80069FADD /* StickerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1057C03259680E80069FADD /* StickerKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerKitTests.swift; sourceTree = "<group>"; };
 		F1057C05259680E80069FADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1057C112596811B0069FADD /* InstagramSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSticker.swift; sourceTree = "<group>"; };
+		F1057C152596812F0069FADD /* StickerKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerKitError.swift; sourceTree = "<group>"; };
+		F1057C19259681420069FADD /* SnapchatSticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatSticker.swift; sourceTree = "<group>"; };
+		F1057C1D259681540069FADD /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		F1057C21259681840069FADD /* StickerKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				F1057BF8259680E80069FADD /* StickerKit.h */,
+				F1057C21259681840069FADD /* StickerKit.swift */,
+				F1057C152596812F0069FADD /* StickerKitError.swift */,
+				F1057C112596811B0069FADD /* InstagramSticker.swift */,
+				F1057C19259681420069FADD /* SnapchatSticker.swift */,
+				F1057C1D259681540069FADD /* Sticker.swift */,
 				F1057BF9259680E80069FADD /* Info.plist */,
 			);
 			path = StickerKit;
@@ -147,6 +162,7 @@
 				TargetAttributes = {
 					F1057BF4259680E80069FADD = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					F1057BFD259680E80069FADD = {
 						CreatedOnToolsVersion = 12.3;
@@ -194,6 +210,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1057C122596811B0069FADD /* InstagramSticker.swift in Sources */,
+				F1057C22259681840069FADD /* StickerKit.swift in Sources */,
+				F1057C1E259681540069FADD /* Sticker.swift in Sources */,
+				F1057C1A259681420069FADD /* SnapchatSticker.swift in Sources */,
+				F1057C162596812F0069FADD /* StickerKitError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +362,7 @@
 		F1057C0A259680E80069FADD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TKRZ2F6UEQ;
@@ -357,6 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruddfawcett.StickerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +388,7 @@
 		F1057C0B259680E80069FADD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TKRZ2F6UEQ;
@@ -389,6 +413,7 @@
 		F1057C0D259680E80069FADD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TKRZ2F6UEQ;
 				INFOPLIST_FILE = StickerKitTests/Info.plist;
@@ -407,6 +432,7 @@
 		F1057C0E259680E80069FADD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TKRZ2F6UEQ;
 				INFOPLIST_FILE = StickerKitTests/Info.plist;
